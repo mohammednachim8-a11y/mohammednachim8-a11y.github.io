@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="talkbox">
+        <h1>Hi Beautyfull</h1>
+        <p>I Really Like You. Please Don't Mind You are Just Too Beautyfull To Ignore</p>
+        <p>if you like me feel free to text me. i made this just for fun.</p>
+        <p>and also if someone else try to enter with defferent name they can't.</p>
+        <p>only if they input your name then they can come here.</p>
+        <p id="lovecon"> Do You Like Me?</p>
+    </div>
+    <div class="choose">
+        <button id="yesbutton"  type="button" style="text-decoration: none;"><a style="text-decoration: none;" href="edu.html">Yes</a></button>
+        <button id="noBtn" style="position: absolute;">No</button>
+    </div>
+    <script>
+        const noBtn = document.getElementById("noBtn");
+
+        noBtn.addEventListener("mouseover", () => {
+            const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+            const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+            noBtn.style.left = `${x}px`;
+            noBtn.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
