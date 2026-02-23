@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="inputbody">
+    <form id="NameForm">
+        <p>What is your Name?</p>
+        <input type="text" id="nameInput" placeholder="Write Your Real Name" name="username">
+        <button id="inputbutton" type="button" onclick="validateName(event)">Enter</button>
+    </form>
+    <script>
+        function validateName(event) {
+            event.preventDefault();
+            console.log('Button clicked');
+            const allowedNames = ["shozib", "raiyana", "sharmin"]; 
+            const inputName = document.getElementById("nameInput").value.trim().toLowerCase();
+
+            const isValid = allowedNames.some(name => name.toLowerCase() === inputName);
+
+            if (isValid) {
+                // Redirect to the next page
+                console.log('Redirecting to kala.html')
+                window.location.href = "kala.html";
+            } else {
+                alert("এইটা আপনার জন্য বানাই নাই");
+            }
+        }
+    </script>
+    
+</body>
+</html>

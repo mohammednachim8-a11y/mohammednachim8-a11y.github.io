@@ -1,0 +1,95 @@
+#inputbody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  font-size: xx-large;
+  color: white;
+}
+#nameInput{
+  width: 180px;
+  height: 28px;
+  border-radius: 3px;
+  border-color: black;
+}
+#inputbutton{
+  width: 50px;
+  height: 28px;
+  background-color: blue;
+  border-color: aliceblue;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-beach-free-image-after-sunset-sky-free-photo.jpeg?w=2210&quality=70);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+}
+
+#talkbox {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 4px;
+    padding-top: 100px;
+    font-size: larger;
+
+}
+#lovecon{
+    font-style: bold;
+    font-size: xx-large ;
+}
+p{
+    word-wrap: break-word;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 5px;
+  }}
+  .choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .choose button {
+    width: 10%;
+    margin: 5px 0;
+    font-weight: bold;
+    background-color: pink;
+    border-radius: 50%;
+  }
+  #yesbutton {
+    text-decoration: none;
+  }
+  #yesbutton{
+    width: 85px;
+    height: 85px;
+  }
+  #succes{
+    margin: 0px;
+    padding: 0px; 
+    text-align: center;
+  }
+  #myVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+#noBtn{
+  position: absolute;
+}
